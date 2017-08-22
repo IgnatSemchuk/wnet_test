@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+	<title>test</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.loadTemplate.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<form id="form">
+		<input type="text" id="id_contract">
+		<div id="info">Введите номер договора<!-- вывод валидации --></div>
+		<fieldset style = "width: 150px">
+			<legend>статус услуг</legend>
+			<input type="checkbox" name="status[]" value="work"> work <br>
+			<input type="checkbox" name="status[]" value="connecting"> connecting <br>
+			<input type="checkbox" name="status[]" value="disconnected"> disconnected <br>
+		</fieldset>
+		<input type="button" id="send" value="отправить">
+	</form>
+	<div id="result"><!-- вывод AJAX--></div>
+</body>
+</html>
